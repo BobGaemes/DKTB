@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cov23rqe8r4nt"]
+
+[ext_resource type="Texture2D" uid="uid://c1xbanarsly3t" path="res://icon.svg" id="1_41qke"]
+[ext_resource type="Script" path="res://new_script.gd" id="1_qtmjm"]
+
+[sub_resource type="SystemFont" id="SystemFont_a2ngs"]
+font_names = PackedStringArray("ROG Fonts")
+
+[sub_resource type="LabelSettings" id="LabelSettings_1axw0"]
+font = SubResource("SystemFont_a2ngs")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qtmjm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(468, 309)
+texture = ExtResource("1_41qke")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 435.0
+offset_top = 208.0
+offset_right = 475.0
+offset_bottom = 231.0
+text = "WHAT THE ACTUAL SIGMA"
+label_settings = SubResource("LabelSettings_1axw0")
